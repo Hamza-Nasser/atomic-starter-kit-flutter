@@ -1,0 +1,45 @@
+name: atomic_starter_kit
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.5.3
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # Handle environment variables
+  flutter_dotenv: ^5.2.1
+  # Auto overrides hashCode and == operator for classes
+  equatable: ^2.0.5
+  # Dio REST API client
+  dio: ^5.7.0
+  # Works as a service locator for dependency injection
+  get_it: ^8.0.1
+  # Internet connection checker (requires iOS and Android permission configuration)
+  internet_connection_checker_plus: ^2.5.2
+  # Secure storage for sensitive data
+  flutter_secure_storage: ^9.2.2
+  # Library with all the UI components, themes, and styles.
+  ui_kit:
+    path: packages/ui_kit
+  flutter_svg: ^2.0.10+1
+  # Bloc state management library
+  bloc: ^8.1.4
+  flutter_bloc: ^8.1.6
+  app_links: ^6.3.2
+  shared_preferences: ^2.3.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+   - .env
+   - .env.dev
+   - assets/svg/

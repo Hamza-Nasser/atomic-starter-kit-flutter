@@ -1,0 +1,4 @@
+enum ScreenRoute {
+  starter,
+  signIn,
+}
